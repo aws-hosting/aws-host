@@ -1,0 +1,49 @@
+#new-booking-section {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  .input-field {
+    width: 20rem;
+    padding: 1rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.6rem;
+  }
+
+  .number {
+    width: 6rem;
+    padding: 1rem 1rem;
+  }
+
+  .input-field-container {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .select-field-container {
+    width: 65%;
+  }
+
+  .input-field-label {
+    font-size: 1.4rem;
+  }
+
+  .button-container {
+    margin-left: 2rem;
+  }
+
+  .desks {
+    margin-top: 5rem;
+  }
+
+  .seats-available {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .book {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,77 @@
+#login-container {
+  margin: 2rem 0 0 2rem;
+  .navbar-logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .navbar-login {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .login-form-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .login-heading-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-des {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .login-elements {
+    margin-top: 2rem;
+  }
+
+  .login-text-field {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .login-btn-icon {
+    width: 2.4rem;
+  }
+
+  .login-button-container {
+    margin-top: 2rem;
+  }
+
+  .login-btn-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .card {
+    margin-top: 5rem;
+    background-color: #74c0fc;
+    padding: 2rem;
+    width: 30rem;
+    // height: 10rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}

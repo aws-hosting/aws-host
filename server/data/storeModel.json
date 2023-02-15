@@ -1,0 +1,33 @@
+[
+  {
+    "year": 2020,
+    "name": "CAT-2",
+    "subject": "PCD",
+    "session": "FN",
+    "count": 67,
+    "ccNeeded": false,
+    "date": "13-2-2023",
+    "blacklistedStudents": "",
+    "departmentsAllowed": ["CSE", "IT"],
+    "classAttendingExam": ["2020-CSE-A"],
+    "hallsUsed": ["ITP-S12", "ITP-S13"],
+    "hallAssigned": [
+      {
+        "hallName": "ITP-S12",
+        "studentsPerDesk": 1,
+        "blueprint": {
+          "desk-0-0": "20CSR001"
+        },
+        "startingRollNo": [
+          {
+            "department": "CSE",
+            "startingNumber": 1,
+            "endingNumber": 35,
+            "year": 2020,
+            "class": "A"
+          }
+        ]
+      }
+    ]
+  }
+]

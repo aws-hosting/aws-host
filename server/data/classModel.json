@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "2020-CSE-A",
+    "noOfStudents": 67,
+    "lateral": 4,
+    "regular": 63,
+    "regularStartingRollnumber": 1,
+    "lateralStartingRollnumber": 247,
+    "regularRollNoPrefix": "20CSR",
+    "lateralRollNoPrefix": "20CSL",
+    "joinedYear": 2020,
+    "depatment": "CSE",
+    "section": "A",
+    "notEligible": [14]
+  },
+  {
+    "_id": "2020-CSE-A",
+    "noOfStudents": 67,
+    "lateral": 4,
+    "regular": 63,
+    "regularStartingRollnumber": 1,
+    "lateralStartingRollnumber": 247,
+    "regularRollNoPrefix": "20CSR",
+    "lateralRollNoPrefix": "20CSL",
+    "joinedYear": 2020,
+    "depatment": "CSE",
+    "section": "A",
+    "notEligible": [14]
+  }
+]

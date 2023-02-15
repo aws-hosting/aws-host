@@ -1,0 +1,49 @@
+#seat-allocation-section {
+  margin: 0 auto;
+  width: 100%;
+  .desk {
+    display: inline-block;
+    width: 10rem;
+    height: 7rem;
+    text-align: center;
+    cursor: pointer;
+
+    border: 1px solid #333;
+    border-collapse: collapse;
+  }
+
+  .allocated-seat {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .form-label {
+    font-size: 1.8rem;
+  }
+
+  .form-input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70rem;
+    margin-top: 2rem;
+  }
+
+  .form-select-container {
+    width: 30rem;
+  }
+
+  .form-input {
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .class-info {
+    margin-top: 4rem;
+  }
+
+  .desk-w {
+    border: none !important;
+  }
+}
