@@ -51,7 +51,7 @@ const NewClass = () => {
       notEligible: [14, 23],
     };
     console.log([save]);
-    const response = await fetch("http://localhost:8000/v1/class/add", {
+    const response = await fetch("http://35.77.45.226:8000/v1/class/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify([save]),

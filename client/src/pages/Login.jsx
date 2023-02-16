@@ -10,7 +10,9 @@ const Login = () => {
     e.preventDefault();
 
     const fetchData = async () => {
-      const response = await fetch(`/v1/halls/info/${loginDetails.rollNo}`);
+      const response = await fetch(
+        `http://35.77.45.226:8000/v1/halls/info/${loginDetails.rollNo}`
+      );
 
       const json = await response.json();
       console.log(json.data);

@@ -56,7 +56,7 @@ const SeatAllocation = () => {
   useEffect(() => {
     const fetchDepartmentData = async () => {
       setLoading(true);
-      const response = await fetch("/v1/halls/all");
+      const response = await fetch("http://35.77.45.226:8000/v1/halls/all");
       const json = await response.json();
 
       //department datas
@@ -86,7 +86,7 @@ const SeatAllocation = () => {
     };
 
     const fetchClassData = async () => {
-      const response = await fetch("/v1/class/all");
+      const response = await fetch("http://35.77.45.226:8000/v1/class/all");
       const json = await response.json();
 
       let temp = [];

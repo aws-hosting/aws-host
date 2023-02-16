@@ -58,7 +58,7 @@ const NewBooking = () => {
           }
         : null;
     console.log(save);
-    const response = await fetch("/v1/halls/add", {
+    const response = await fetch("http://35.77.45.226:8000/v1/halls/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ department, halls: save }),

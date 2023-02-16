@@ -31,7 +31,7 @@ const SeatsAllocated = ({
     e.preventDefault();
     console.log("Hi");
     const saveData = removeDuplicates(storeData);
-    const response = await fetch("/v1/halls/store", {
+    const response = await fetch("http://35.77.45.226:8000/v1/halls/store", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(saveData),
@@ -60,7 +60,7 @@ const SeatsAllocated = ({
 
   useEffect(() => {
     const fetchHallDetails = async () => {
-      const response = await fetch("/v1/halls/all");
+      const response = await fetch("http://35.77.45.226:8000/v1/halls/all");
 
       const json = await response.json();
 
