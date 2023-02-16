@@ -37,25 +37,6 @@ const NewClass = () => {
     setShowDesks(true);
   };
   const saveData = async () => {
-    // ref
-    //   [
-    //     {
-
-    //         "noOfStudents": 67,
-    //         "lateral": 4,
-    //         "reqular": 63,
-    //         "reqularStartingRollnumber": 64,
-    //         "lateralStartingRollnumber": 251,
-    //         "regularRollNoPrefix": "20CSR",
-    //         "lateralRollNoPrefix": "20CSL",
-    //         "joinedYear": 2020,
-    //         "department": "CSE",
-    //         "section": "C",
-    //         "notEligible": [
-    //             14
-    //         ]
-    //     }
-    // ]
     const save = {
       noOfStudents: Lateral + Regular,
       lateral: Lateral,
@@ -67,26 +48,26 @@ const NewClass = () => {
       joinedYear: year,
       department: department,
       section: section,
-      //         "notEligible": [
-      //             14
-      //         ]
+      notEligible: [14, 23],
     };
-    console.log(save);
-    // const response = await fetch("http://localhost:8000/v1/class/add", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ department, halls: save }),
-    // })
-    // .then(async (doc) => {
-    //   let json = await doc.json();
-    //   console.log(json.dev.error.statusCode);
-    //   if (json.dev.error.statusCode === 400) {
-    //     NotificationManager.error("Classroom Already Exist", "Error", 5000);
-    //   }
-    // })
-    //       .catch ((err) => {
-    //   console.log(err.dev);
-    // });
+    console.log([save]);
+    const response = await fetch("http://localhost:8000/v1/class/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify([save]),
+    })
+      .then(async (doc) => {
+        let json = await doc.json();
+        console.log(json.dev.error.statusCode);
+        if (json.dev.error.statusCode === 400) {
+          NotificationManager.error("Classroom Already Exist", "Error", 5000);
+        } else {
+          NotificationManager.success("Successfully added", "Success", 5000);
+        }
+      })
+      .catch((err) => {
+        console.log(err.dev);
+      });
   };
   const bookingTypes = [
     { label: "2021", value: "2021" },
@@ -105,7 +86,8 @@ const NewClass = () => {
     },
   ];
 
-  const submitHandler = () => {
+  const submitHandler = (e) => {
+    e.preventDefault();
     for (let i = 0; i < maxRow; i++) {
       for (let j = 0; j < maxColumn; j++) {
         const tempBlueprint = bluePrint;

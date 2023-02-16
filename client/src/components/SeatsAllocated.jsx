@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./../styles/pages/NewBooking.scss";
 import Loading from "./Loading";
 import ButtonPrimary from "../components/ButtonPrimary";
-import NotificationManager from "react-notifications";
+import { NotificationManager } from "react-notifications";
 const SeatsAllocated = ({
   halls = [],
   totalSudents,

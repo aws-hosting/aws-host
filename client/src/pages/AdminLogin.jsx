@@ -5,7 +5,7 @@ import ButtonPrimary from "../components/ButtonPrimary";
 import "./../styles/pages/AdminLogin.scss";
 import { useNavigate } from "react-router-dom";
 
-const AdminLogin = () => {
+const AdminLogin = ({ setLogin }) => {
   const [loginDetails, setLoginDetails] = useState({
     email: "",
     password: "",
@@ -31,6 +31,7 @@ const AdminLogin = () => {
       NotificationManager.error("Invaild Mail or Password", "Error", 5000);
     } else {
       navigate("/");
+      setLogin(true);
       NotificationManager.success("Login Successfull", "Success", 5000);
     }
     setDisabled(false);

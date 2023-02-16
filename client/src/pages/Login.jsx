@@ -8,10 +8,6 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const submitHandler = (e) => {
     e.preventDefault();
-    // setDisabled(true);
-    // NotificationManager.error("Roll No Does not exist", "Error", 5000);
-    // console.log("Submitted");
-    // setDisabled(false);
 
     const fetchData = async () => {
       const response = await fetch(`/v1/halls/info/${loginDetails.rollNo}`);
@@ -42,7 +38,6 @@ const Login = () => {
 
   return (
     <div id="login-container">
-      {" "}
       <div className="navbar-login">
         <img src={logo} alt="KEC LOGO" className="navbar-logo" />
         <p className="navbar-logo-name">Kongu Engineering College</p>
